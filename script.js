@@ -54,7 +54,7 @@ function designCard(results,name,weather,timeUpdate){
 //function to fetch the data from server
 async function getApiData(place){
     try{
-        const response = await fetch(`http://api.weatherapi.com/v1/current.json?key=fa24b51fdf1440d289a114727233008&q=${place}&aqi=no`,{mode:"cors"});
+        const response = await fetch(`https://api.weatherapi.com/v1/current.json?key=fa24b51fdf1440d289a114727233008&q=${place}&aqi=no`,{mode:"cors"});
         const data = await response.json();
         assignData(data);
     }
